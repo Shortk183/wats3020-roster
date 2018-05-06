@@ -26,22 +26,20 @@ class Student extends Person {
 //  `calculateAttendance` created to give percentage of how many days student was present.
 // It should return a string like "90%" or "84.732%". Attendance should be
 // recorded into an Array using either a `0` for "absent" or a `1` for "present".
-calculateAttendance(){
-    if (this.attendance.length > 0){
-    let counter = 0;
-    for (let mark of this.attendance){
-        counter = counter + mark;
-    }
-    let attendancePercentage = counter / this.attendance.length * 100;
-    return '${attendancePercentage}%';
+calculateAttendance() {
+    if (this.attendance.length>0){
+        let counter = 0;
+        for (let mark of this.attendance){
+            counter = counter + mark;
+        }
+        let attendancePercentage = counter / this.attendance.length * 100;
+        return '${attendancePercentage}';
     } else {
-    return "0%";
-
-      }
-
-   }
-
+        return "0%";
+    }
+    }
 }
+
 
 // TODO: Create another class that extends the `Person` class called `Teacher`.
 // The `Teacher` class should add a property called `this.honorific` (supplied
