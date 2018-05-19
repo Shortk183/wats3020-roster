@@ -33,7 +33,7 @@ calculateAttendance() {
             counter = counter + mark;
         }
         let attendancePercentage = counter / this.attendance.length * 100;
-        return '${attendancePercentage}';
+        return `${attendancePercentage}`;
     } else {
         return "0%";
     }
